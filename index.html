@@ -181,6 +181,93 @@
     </div>
   </section>
 
+  <!--Literature-Section-Start-->
+  <section id="Literature">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="heading">
+          <h2>Literature <span>Survey</span></h2>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row lit-block lit-block-media">
+        <div class="col-md-5 lit-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <!-- TODO: swap images/Literature/student-wellbeing-stats.jpg for a chart/photo relevant to student wellbeing -->
+          <img src="images/Literature/student-wellbeing-stats.jpg" alt="Student mental health statistics">
+        </div>
+        <div class="col-md-7">
+          <h4><strong>Background</strong></h4>
+          <p>Student wellbeing has become a critical concern in higher education. Studies estimate that more than 30%
+            of university students report symptoms of anxiety or depression, and a large proportion of these cases
+            remain undetected because students do not self-refer to counselling services. Untreated
+            psychological distress is strongly associated with academic underperformance, absenteeism, and student
+            dropout. Traditional support models are reactive &mdash; they depend on a student recognising a
+            problem and voluntarily approaching a counsellor &mdash; which means intervention often occurs only after
+            wellbeing has significantly deteriorated.
+          </p>
+        </div>
+      </div>
+
+      <div class="row lit-block">
+        <div class="col-md-12">
+          <h4><strong>Existing Approaches to Wellbeing Monitoring</strong></h4>
+            <p>Early research relied on periodic self-report questionnaires such as the PHQ-9, GAD-7, and WHO-5 indices. While validated, these instruments provide only a snapshot, are prone to response bias, and are
+              completed too infrequently to capture rapidly changing emotional states. More recent work explores
+              continuous, passive sensing using smartphone and wearable data (sleep, physical activity, screen time,
+              location patterns) to infer mood and stress with machine-learning models. Studies such as the
+              StudentLife project demonstrated that behavioural signals collected passively can predict changes in
+              depression scores across an academic term.
+            </p>
+            <h4><strong>Emotion and Sentiment Recognition</strong></h4>
+            <p>A parallel body of work applies Natural Language Processing to text that students produce naturally
+              &mdash; journal entries, reflective writing, forum posts, and chatbot conversations. Lexicon-based
+              methods (e.g. LIWC, VADER) were used initially, but transformer-based models such as BERT and RoBERTa now
+              achieve substantially higher accuracy in detecting emotional distress and suicidal ideation in short
+              informal text. Multimodal approaches that combine text with facial-expression or voice
+              features have also been reported, though they raise stronger privacy concerns.
+            </p>
+        </div>
+      </div>
+
+      <div class="row lit-block lit-block-media lit-block-media-reverse">
+        <div class="col-md-5 lit-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <!-- TODO: swap images/Literature/student-distress.jpg for a relevant figure -->
+          <img src="images/Literature/student-distress.jpg" alt="Predictive risk modelling of student wellbeing">
+        </div>
+        <div class="col-md-7">
+          <h4><strong>Predictive Risk Modelling</strong></h4>
+            <p>Several studies frame wellbeing decline as a classification or early-warning problem. Features drawn from
+              academic records (grades, LMS logins, submission timing) combined with self-report and behavioural data
+              have been used to train models &mdash; logistic regression, random forests, and gradient-boosting ensembles &mdash; that flag students at risk of psychological distress or academic failure with useful
+              precision. Key challenges identified in the literature include class imbalance (few high-risk
+              cases), concept drift across semesters, and the need for explainable predictions so that counsellors can
+              trust and act on the output.
+            </p>
+        </div>
+      </div>
+
+      <div class="row lit-block">
+        <div class="col-md-12">
+          <h4><strong>Personalised Support and Intervention</strong></h4>
+            <p>Digital mental-health interventions &mdash; including CBT-based mobile apps, mindfulness tools, and
+              conversational agents such as Woebot and Wysa &mdash; have shown small-to-moderate positive effects on
+              student anxiety and depression in controlled trials. Recommender-system techniques are
+              increasingly used to match students to the most appropriate resource (peer support, self-help content, or
+              professional referral) based on their current state.
+            </p>
+            <h4><strong>Research Gap</strong></h4>
+            <p>Although individual components &mdash; passive sensing, sentiment analysis, risk prediction, and digital
+              intervention &mdash; are well studied in isolation, few systems integrate them into a single continuous
+              pipeline that monitors wellbeing, explains its assessment, and routes the student to timely, personalised
+              support while preserving privacy and keeping a human counsellor in the loop. This project
+              addresses that gap by developing an integrated intelligent system for student wellbeing monitoring and
+              support.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!--Jquery-->
   <script type="text/javascript" src="js/jquery.min.js?v=1"></script>
