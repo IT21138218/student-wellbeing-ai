@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" role="img" aria-label="Student Wellbeing System logo">
+  <g transform="translate(6,6)">
+    <circle cx="24" cy="24" r="24" fill="#00574e"/>
+    <path d="M24 37c-8-5-13-11-13-17a7 7 0 0 1 13-3 7 7 0 0 1 13 3c0 6-5 12-13 17z" fill="none" stroke="#8ad0b8" stroke-width="3"/>
+    <polyline points="12,25 20,25 24,18 29,32 33,25 40,25" fill="none" stroke="#52be80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="64" y="27" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="700" fill="#ffffff">Student Wellbeing</text>
+  <text x="64" y="46" font-family="'Segoe UI',Arial,sans-serif" font-size="12" letter-spacing="2" fill="#8ad0b8">MONITORING &amp; SUPPORT</text>
+</svg>
+
