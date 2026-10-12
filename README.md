@@ -1,56 +1,148 @@
-# Intelligent System for Student Wellbeing Monitoring and Support &ndash; Research Website
+# RP_Website: Intelligent System for Student Wellbeing Monitoring and Support
 
-Static research-project website (short name: **Student Wellbeing AI**) for an
-intelligent AI system that monitors, assesses and supports student wellbeing and
-mental health. Four components:
+The official research project website for **Student Wellbeing AI** (Project ID **R26-IT-165**), a
+final-year research project at the Sri Lanka Institute of Information Technology (SLIIT), Faculty of
+Computing. The website presents the research problem, objectives, methodology, system components,
+milestones, documents and team behind an AI system that monitors, assesses and supports student
+wellbeing and mental health.
 
-1. Behavioural & Mood Monitoring
-2. Emotion & Sentiment Recognition (NLP)
-3. Wellbeing Risk Prediction
-4. Personalised Support & Recommendation
+## Live Demo
 
-Stack: React (Vite) frontend, Python (FastAPI) backend, MongoDB, scikit-learn /
-XGBoost / LightGBM for prediction, Google Generative AI (Gemini) for the NLP /
-conversational component, models served via REST, dashboards for students and
-counsellors.
+🔗 **[https://it21138218.github.io/student-wellbeing-ai/](https://it21138218.github.io/student-wellbeing-ai/)**
 
-## Structure
+## Features
 
-- `index.html` &ndash; all page content (single page, anchored sections)
-- `css/` &ndash; `style.css` + `modify.css` (base template, recoloured teal),
-  `polish.css` (modern 2026 restyle: typography, cards, spacing, hovers), vendor CSS.
-  Palette: teal `#0f766e` / green `#10b981` / deep `#082826`. Font: Inter (Google Fonts).
-- `js/` &ndash; jQuery + plugins and `script.js`
-- `images/` &ndash; section images (see "Images to replace" below)
-- `downloads/` &ndash; project PDFs/PPTs (see `downloads/README.md`)
+- **Single-page layout**: anchored sections with smooth scrolling and a fixed navigation bar
+- **Project Overview**: summary of the system, key facts and the four research components
+- **Literature Survey**: background, existing approaches and the research gap
+- **System Components**: behavioural and mood monitoring, emotion and sentiment recognition, wellbeing
+  risk prediction, and the monitoring and support dashboard
+- **Research Problem & Solution**: problem statement, proposed solution and an overview video
+- **Research Objectives**: the main objective plus five sub-objectives in auto-advancing tabs
+- **Methodology**: research process with an animated system pipeline video
+- **Technologies Used**: icon grid of the full frontend, backend, database and ML stack
+- **Milestones**: timeline of every assessment with dates, marks and progress bars
+- **Documents**: download links for proposals, reports, the research paper, logbooks and presentations
+- **About Us**: supervisor, co-supervisor and team member profiles
+- **Contact Us**: contact details and a message form that opens the visitor's email client
+- **Scroll Guide Bot**: a floating assistant that introduces each section as you scroll
+- **Fully responsive**: works on mobile, tablet and desktop screens
 
-## Still to do (search `index.html` for `TODO` and `[` )
+## Technology Stack
 
-- **Project ID:** replace `[24-25J-XXX]` in the Overview section
-- **Literature Survey:** written as clean prose (no citation numbers). Add a reference
-  list later only if your handbook requires one.
-- **Team:** names and emails are real, one per component (About Us `member-1`..`member-4`,
-  in this order &ndash; tell me if the real ownership differs and I'll re-pair them):
-  1. Ekanayake E.M.S.P &ndash; Component 1, Behavioural & Mood Monitoring
-  2. K.H. Nimesha &ndash; Component 2, Emotion & Sentiment Recognition
-  3. DMSM Dissanayaka &ndash; Component 3, Wellbeing Risk Prediction
-  4. Zoysa A.K.T.D &ndash; Component 4, Personalised Support & Recommendation
+### Website
 
-  Still needed: registration numbers, LinkedIn URLs, and real photos for
-  `images/Team/member-1.jpg`..`member-4.jpg` (supervisor/co-supervisor photos are already in
-  place at `images/Team/supervisor.jpeg` and `co-supervisor.jpeg`)
-- **Supervisor / co-supervisor:** done &ndash; Ms. Lokesha Weerasinghe / Ms. Akshi De Silva
-  (About Us + Contact)
-- **Downloads:** drop files in `downloads/` per `downloads/README.md`, update "Submitted on TODO" dates
-- **Milestones:** 13 items matching the SLIIT 2026 Regular Batch RP Timeline, with dates,
-  weights (sum to 100%) and "Marks Allocated: TBD/10"
-  field per milestone &ndash; confirm all of this against your project handbook and fill in
-  real rubric scores as they come back
-- **Contact:** still placeholder &ndash; team email (`studentwellbeing.team@gmail.com`) and
-  phone (`+94 7X-XXXXXXX`)
-- **Overview video:** done &ndash; plays from `video/project-overview.mp4` (28 MB; consider
-  compressing to ~720p for faster loading) in "Research Problem & Solution"
-- **GitHub Pages:** rename the repo (e.g. `student-wellbeing-ai`) so the project URL matches
+| Layer      | Technologies                                               |
+| ---------- | ---------------------------------------------------------- |
+| Markup     | HTML5                                                      |
+| Styling    | CSS3, Bootstrap 3, Animate.css, Font Awesome, Google Fonts |
+| Scripting  | JavaScript, jQuery, WOW.js, Owl Carousel                   |
+| Hosting    | GitHub Pages                                               |
 
-Images use descriptive filenames &ndash; see `images/README.md`. Replace a file keeping its
-name and no HTML edit is needed.
+### Research System
+
+| Layer               | Technologies                                         |
+| ------------------- | ---------------------------------------------------- |
+| Frontend            | React, Vite, JavaScript, Tailwind CSS, Chart.js      |
+| Backend             | Python, FastAPI (REST APIs)                          |
+| Database & Ops      | MongoDB, Docker, Git & GitHub                        |
+| Machine Learning    | scikit-learn, XGBoost, LightGBM, SHAP, NLTK / spaCy  |
+| Generative AI / NLP | Google Generative AI (Gemini)                        |
+| Tools               | Jupyter, Postman, VS Code                            |
+
+## Project Structure
+
+```
+student-wellbeing-ai/
+├── index.html          # Main single-page website (all sections)
+├── preloader.gif       # Page loading animation
+├── css/
+│   ├── bootstrap.css   # Bootstrap framework
+│   ├── style.css       # Base template styles
+│   ├── modify.css      # Timeline and section customisations
+│   ├── responsive.css  # Legacy breakpoints
+│   ├── polish.css      # Modern theme, layout fixes and mobile responsiveness
+│   └── ...             # Animate, Font Awesome, Owl Carousel, prettyPhoto
+├── js/
+│   ├── script.js       # Main site script (navigation, scrolling, carousels)
+│   └── ...             # jQuery and vendor plugins
+├── fonts/              # Web fonts and icon fonts
+├── images/
+│   ├── Logo/           # Logo, favicon and loader emblem
+│   ├── Slider/         # Hero banner
+│   ├── Literature/     # Literature survey images
+│   ├── Service/        # System components background video
+│   ├── objectives/     # Research objective images and background video
+│   ├── methodology/    # System pipeline video
+│   ├── Technology/     # Technology logos and background video
+│   ├── Team/           # Team and supervisor photos
+│   ├── Testimonials/   # Documents section background
+│   └── Bot/            # Scroll guide bot icon
+├── video/              # Project overview video
+└── downloads/          # Notes for project documents
+```
+
+## Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/IT21138218/student-wellbeing-ai.git
+   cd student-wellbeing-ai
+   ```
+
+2. **No build step is needed.** This is a static website with no dependencies to install.
+
+## Usage
+
+- **Open directly:** double-click `index.html` to open it in your browser.
+- **Run a local server** (recommended so videos and fonts load correctly):
+
+  ```bash
+  # Python 3
+  python -m http.server 8000
+  ```
+
+  Then visit [http://localhost:8000](http://localhost:8000).
+
+- **VS Code:** right-click `index.html` → **Open with Live Server**.
+- **Edit content:** all text lives in `index.html`. To swap an image, replace the file in `images/`
+  and keep the same filename.
+
+## Team
+
+### Supervisors
+
+| Name                    | Role          | Contact            |
+| ----------------------- | ------------- | ------------------ |
+| Ms. Lokesha Weerasinghe | Supervisor    | lokesha.w@sliit.lk |
+| Ms. Akshi De Silva      | Co-Supervisor | akshi.d@sliit.lk   |
+
+### Members
+
+| Name              | Component                                                   | Email                  |
+| ----------------- | ----------------------------------------------------------- | ---------------------- |
+| Ekanayake E.M.S.P | Component 1: Wellbeing Indicator and Adaptive Quiz          | it21138218@my.sliit.lk |
+| K.H. Nimesha      | Component 2: Risk Classification and Wellbeing Forecasting  | it21049736@my.sliit.lk |
+| DMSM Dissanayaka  | Component 3: Coping Recommendation and Social Peer Matching | it20145552@my.sliit.lk |
+| Zoysa A.K.T.D     | Component 4: Monitoring, Visualization & AI Learning Support Dashboard | it19064482@my.sliit.lk |
+
+## Contributing
+
+This website belongs to an academic research project, but suggestions and fixes are welcome.
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-change`
+3. Commit your changes: `git commit -m "Describe your change"`
+4. Push the branch: `git push origin feature/your-change`
+5. Open a Pull Request
+
+For questions, contact the team at **studentwellbeing.team@gmail.com**.
+
+## Thank You
+
+Thank you for visiting the Student Wellbeing AI research website! We are grateful to our supervisor
+**Ms. Lokesha Weerasinghe**, our co-supervisor **Ms. Akshi De Silva**, the Faculty of Computing at
+SLIIT, and every student and counsellor who took part in our research.
+
+© 2026 Intelligent System for Student Wellbeing Monitoring and Support. All rights reserved.
