@@ -577,6 +577,40 @@
   </script>
 
 
+  <!--Methodology-Section-Start-->
+  <section id="Methodology">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="heading">
+          <h2>Metho<span>dology</span></h2>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row methodology-row">
+        <div class="col-md-6 methodology-text wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms">
+          <p><span><strong>A</strong></span> requirements study was carried out using online questionnaires and
+            interviews with university students and counselling staff. Insights from this study informed the design
+            of the four components. The system follows a client-server architecture: a React (Vite) front end for
+            students and counsellors, a Python (FastAPI) back end exposing each component as a REST
+            service, and a database for check-in history, journal entries and model data. The emotion/sentiment and
+            wellbeing-risk models are trained offline and served through the back end; the recommendation module
+            consumes their outputs at runtime.
+          </p>
+          <p><strong>Overall process:</strong> requirement analysis &rarr; dataset collection &amp; ethical approval
+            &rarr; model development &amp; training &rarr; API integration &rarr; web application development &rarr;
+            integrated testing &rarr; user evaluation with students and counsellors &rarr; refinement.</p>
+        </div>
+        <div class="col-md-6 methodology-figure wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <video autoplay muted loop playsinline
+            aria-label="AI system pipeline for Student Wellbeing Monitoring: four connected stages - behavioural and mood monitoring, emotion and sentiment recognition, wellbeing risk prediction, and personalised support and recommendation - feeding a student dashboard and a counsellor dashboard">
+            <source src="images/methodology/methodology.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
   <!--Jquery-->
   <script type="text/javascript" src="js/jquery.min.js?v=1"></script>

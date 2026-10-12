@@ -1,0 +1,53 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="System architecture: four connected modules">
+  <rect width="720" height="520" fill="#ffffff"/>
+  <text x="30" y="40" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#00574e">System architecture (Figure 1)</text>
+
+  <!-- inputs -->
+  <rect x="30" y="80" width="170" height="70" rx="8" fill="#eef6f3" stroke="#1c7f74"/>
+  <text x="115" y="112" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#0b3d3a" text-anchor="middle">Student check-ins</text>
+  <text x="115" y="132" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#0b3d3a" text-anchor="middle">&amp; journal entries</text>
+
+  <!-- modules -->
+  <g font-family="'Segoe UI',Arial,sans-serif">
+    <rect x="270" y="70" width="200" height="64" rx="8" fill="#00574e"/>
+    <text x="370" y="98" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">1 &#8212; Behavioural &amp; Mood</text>
+    <text x="370" y="118" font-size="12" fill="#bfe9d7" text-anchor="middle">monitoring</text>
+
+    <rect x="270" y="158" width="200" height="64" rx="8" fill="#1c7f74"/>
+    <text x="370" y="186" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">2 &#8212; Emotion &amp; Sentiment</text>
+    <text x="370" y="206" font-size="12" fill="#d7f0e6" text-anchor="middle">recognition from text</text>
+
+    <rect x="270" y="246" width="200" height="64" rx="8" fill="#3d7dca"/>
+    <text x="370" y="274" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">3 &#8212; Wellbeing Risk</text>
+    <text x="370" y="294" font-size="12" fill="#e0ecfa" text-anchor="middle">prediction</text>
+
+    <rect x="270" y="334" width="200" height="64" rx="8" fill="#52be80"/>
+    <text x="370" y="362" font-size="14" fill="#0b3d3a" text-anchor="middle" font-weight="700">4 &#8212; Personalised Support</text>
+    <text x="370" y="382" font-size="12" fill="#0b3d3a" text-anchor="middle">&amp; recommendation</text>
+  </g>
+
+  <!-- outputs -->
+  <rect x="540" y="150" width="150" height="70" rx="8" fill="#eef6f3" stroke="#1c7f74"/>
+  <text x="615" y="182" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#0b3d3a" text-anchor="middle">Student app</text>
+  <text x="615" y="202" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#0b3d3a" text-anchor="middle">dashboard</text>
+  <rect x="540" y="250" width="150" height="70" rx="8" fill="#fdf1e6" stroke="#92530c"/>
+  <text x="615" y="282" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#5b3406" text-anchor="middle">Counsellor</text>
+  <text x="615" y="302" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#5b3406" text-anchor="middle">early-warning view</text>
+
+  <g stroke="#9aa8a4" stroke-width="2" fill="none" marker-end="url(#a)">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#9aa8a4"/>
+      </marker>
+    </defs>
+    <path d="M200 115 L266 100"/>
+    <path d="M200 125 L266 185"/>
+    <path d="M370 134 L370 156"/>
+    <path d="M370 222 L370 244"/>
+    <path d="M370 310 L370 332"/>
+    <path d="M470 190 L536 185"/>
+    <path d="M470 280 L536 285"/>
+  </g>
+  <text x="30" y="470" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#6b7c78">React (Vite) front end &#8226; Python back-end services &#8226; database for history &amp; model data &#8226; models trained offline, served at runtime</text>
+</svg>
+
