@@ -1290,6 +1290,175 @@
       </div>
     </div>
   </section>
+  <!--Contact-Section-Start-->
+  <section id="contact">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="heading">
+          <h2>CONTACT <span>US</span></h2>
+          <div class="line"></div>
+          <p class="text_size"><span><strong>R</strong></span>each out to us! For inquiries, collaborations, or just to
+            say hello, our Contact Us section is your gateway to connect with our team.</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="col-md-6 col-sm-6 contact-sec-1">
+          <h4>CONTACT IN<span>FO</span></h4>
+          <ul class="contact-form">
+            <li><i class="fa fa-envelope"></i>
+              <h6><strong>Mail Us:</strong> <a href="mailto:studentwellbeing.team@gmail.com">studentwellbeing.team@gmail.com</a></h6>
+            </li>
+            <li><i class="fa fa-phone"></i>
+              <h6><strong>Phone:</strong> <a href="tel:+94716158725">+94 71 615 8725</a></h6>
+            </li>
+            <li><i class="fa fa-user"></i>
+              <h6><strong>Supervisor:</strong> Ms. Lokesha Weerasinghe &ndash; lokesha.w@sliit.lk</h6>
+            </li>
+            <li><i class="fa fa-user"></i>
+              <h6><strong>Co-Supervisor:</strong> Ms. Akshi De Silva &ndash; akshi.d@sliit.lk</h6>
+            </li>
+            <li><i class="fa fa-map-marker"></i>
+              <h6><strong>Address:</strong> Sri Lanka Institute of Information Technology, New Kandy Road, Malabe, Sri
+                Lanka</h6>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <form id="main-contact-form" name="contact-form">
+            <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message"
+                required="required"></textarea>
+            </div>
+            <button type="submit" class="btn-send col-md-12 col-sm-12 col-xs-12">Send Now</button>
+          </form>
+          <script>
+            (function () {
+              var form = document.getElementById('main-contact-form');
+              form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var name = form.elements['name'].value.trim();
+                var email = form.elements['email'].value.trim();
+                var subject = form.elements['subject'].value.trim();
+                var message = form.elements['message'].value.trim();
+                var body = 'From: ' + name + ' (' + email + ')\n\n' + message;
+                var mailto = 'mailto:studentwellbeing.team@gmail.com'
+                  + '?subject=' + encodeURIComponent(subject)
+                  + '&body=' + encodeURIComponent(body);
+                window.location.href = mailto;
+              });
+            })();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer_back">
+    <footer id="footer">
+      <div class="bg-sec">
+        <div class="container">
+          <h2>MONITORING AND SUPPORTING STUDENT WELLBEING THROUGH THE <strong>INTELLIGENT SYSTEM FOR STUDENT
+              WELLBEING</strong> TEAM</h2>
+        </div>
+      </div>
+    </footer>
+    <footer id="footer-down">
+
+      <p> &copy; Copyright 2026 Intelligent System for Student Wellbeing Monitoring and Support - All rights reserved</p>
+    </footer>
+  </div>
+
+  <!--Scroll-Guide-Bot-Start
+       Static-site "chatbot": no API/backend. A floating avatar that follows
+       you down the page and pops up a fresh speech-bubble message as each
+       section scrolls into view - a friendly section-by-section guided tour.
+       Drop your icon image at images/Bot/chat-icon.png (falls back to a
+       robot emoji if missing). Edit the data-tour-msg text below per section
+       to change what the bot says. -->
+  <div id="sw-bot">
+    <div id="sw-bot-think" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div id="sw-bot-bubble" role="status" aria-live="polite">
+      <p id="sw-bot-bubble-text"></p>
+    </div>
+    <button id="sw-bot-toggle" type="button" aria-label="Guide assistant">
+      <img src="images/Bot/chat-icon.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <span class="sw-bot-fallback" style="display:none;">&#129302;</span>
+    </button>
+  </div>
+  <script>
+    (function () {
+      var tour = [
+        { id: 'slider', msg: "👋 Hi, I'm your guide! Scroll down and I'll walk you through Student Wellbeing AI, section by section." },
+        { id: 'overview', msg: "This is the Project Overview — a snapshot of the system and its four components." },
+        { id: 'Literature', msg: "Here's the Literature Survey — the research grounding this project." },
+        { id: 'service', msg: "These are the System Components — how the four AI modules fit together." },
+        { id: 'Problem', msg: "The Research Problem &amp; Solution — what gap we're solving and how." },
+        { id: 'Objectives', msg: "Our Research Objectives — the concrete goals driving the project." },
+        { id: 'Methodology', msg: "The Methodology — the end-to-end pipeline from data to support." },
+        { id: 'Technology', msg: "Technology Used — the full stack powering the system." },
+        { id: 'portfolio', msg: "Milestones — our timeline and progress so far." },
+        { id: 'testimonials', msg: "Documents — proposals, reports and presentations, all downloadable." },
+        { id: 'team', msg: "Meet the Team — the people behind Student Wellbeing AI." },
+        { id: 'contact', msg: "Almost there! Here's how to reach us — thanks for scrolling through. 💚" }
+      ];
+      var bubble = document.getElementById('sw-bot-bubble');
+      var text = document.getElementById('sw-bot-bubble-text');
+      var toggle = document.getElementById('sw-bot-toggle');
+      var think = document.getElementById('sw-bot-think');
+      var lastId = null, hideTimer = null, thinkTimer = null;
+
+      function showMsg(msg) {
+        clearTimeout(hideTimer);
+        clearTimeout(thinkTimer);
+        bubble.classList.remove('sw-bot-bubble-show');
+        think.classList.add('sw-bot-think-show');
+        thinkTimer = setTimeout(function () {
+          think.classList.remove('sw-bot-think-show');
+          text.innerHTML = msg;
+          void bubble.offsetWidth; /* restart animation */
+          bubble.classList.add('sw-bot-bubble-show');
+          hideTimer = setTimeout(function () { bubble.classList.remove('sw-bot-bubble-show'); }, 6000);
+        }, 700);
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && entry.target.id !== lastId) {
+            lastId = entry.target.id;
+            var item = tour.filter(function (t) { return t.id === lastId; })[0];
+            if (item) showMsg(item.msg);
+          }
+        });
+      }, { threshold: 0, rootMargin: '-40% 0px -40% 0px' });
+
+      tour.forEach(function (t) {
+        var el = document.getElementById(t.id);
+        if (el) observer.observe(el);
+      });
+
+      toggle.addEventListener('click', function () {
+        var item = tour.filter(function (t) { return t.id === lastId; })[0];
+        showMsg(item ? item.msg : tour[0].msg);
+      });
+    })();
+  </script>
+  <!--Scroll-Guide-Bot-End-->
 
   <!--Jquery-->
   <script type="text/javascript" src="js/jquery.min.js?v=1"></script>
