@@ -406,6 +406,177 @@
       </div>
     </div>
   </section>
+  <!--Features-Section-Start-->
+  <section id="Objectives">
+    <!-- Looping background animation: drop your Veo-3-generated clip at
+         images/Objectives/objectives-bg.mp4 (16:9, seamless loop) and it
+         plays automatically behind the tabs. Section looks unchanged if
+         the file is absent - video just won't render. -->
+    <video class="objectives-bg-video" autoplay muted loop playsinline>
+      <source src="images/objectives/objectives-bg.mp4" type="video/mp4">
+    </video>
+    <div class="objectives-bg-overlay"></div>
+    <div class="specific-container">
+      <div class="container">
+
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>Research <span>Objectives</span></h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#tab-1" role="tab" data-toggle="tab"><i
+                class="fa fa-star"></i></a></li>
+          <li role="presentation"><a href="#tab-2" role="tab" data-toggle="tab"><i class="fa fa-chevron-right"> 1st
+                Obj</i></a>
+          </li>
+          <li role="presentation"><a href="#tab-3" role="tab" data-toggle="tab"><i class="fa fa-chevron-right"> 2nd
+                Obj</i></a>
+          </li>
+          <li role="presentation"><a href="#tab-4" role="tab" data-toggle="tab"><i class="fa fa-chevron-right"> 3rd
+                Obj</i></a>
+          </li>
+          <li role="presentation"><a href="#tab-5" role="tab" data-toggle="tab"><i class="fa fa-chevron-right"> 4th
+                Obj</i></a>
+          </li>
+          <li role="presentation"><a href="#tab-6" role="tab" data-toggle="tab"><i class="fa fa-chevron-right"> 5th
+                Obj</i></a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active feat-sec" id="tab-1">
+            <div class="col-md-6 tab">
+              <h5 style="margin-top: 80px;">Main Objective</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="main-objective-quote"><strong>&ldquo;To design and develop an intelligent system for
+                  continuous monitoring, assessment, and support of student wellbeing and mental health, enabling
+                  earlier identification of at-risk students and timely, personalised intervention.&rdquo;</strong>
+              </p>
+            </div>
+            <div class="col-md-4 tab-img"><img src="images/objectives/main-objective.jpg" class="img-responsive" alt=""
+               ></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-2">
+            <div class="col-md-6 tab">
+              <h5 style="margin-top: 80px;">Objective 1 &ndash; Design and develop a system to collect, store and
+                visualise multi-source student wellbeing indicators (mood, behaviour, academic engagement)</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Design a short, low-friction daily check-in (mood, sleep, stress rating)</p>
+              <p class="feat-sec">Capture optional passive signals: activity level, app-usage patterns, LMS login
+                frequency</p>
+              <p class="feat-sec">Store and aggregate the data into a per-student wellbeing timeline</p>
+              <p class="feat-sec">Visualise trends for students and privacy-preserving early-warning signals for
+                counsellors</p>
+            </div>
+            <div class="col-md-4 tab-img"><img src="images/objectives/obj-mood-stress.jpg" class="img-responsive" alt=""
+               ></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-3">
+            <div class="col-md-6 tab">
+              <h5 style="margin-top: 80px;">Objective 2 &ndash; Develop an NLP model to recognise emotion and detect
+                high-risk language in student-generated text</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Collect and anonymise consented text: journal entries, reflective notes, chatbot
+                messages</p>
+              <p class="feat-sec">Integrate Google Generative AI (Gemini) for emotion and sentiment
+                classification</p>
+              <p class="feat-sec">Detect high-risk language such as hopelessness or self-harm indicators</p>
+              <p class="feat-sec">Surface language-based wellbeing insights alongside the numeric indicators</p>
+            </div>
+            <div class="col-md-4 tab-img"><img src="images/objectives/obj-emotion-recognition.jpg" class="img-responsive"
+                alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-4">
+            <div class="col-md-6 tab">
+              <h5 style="margin-top: 80px;">Objective 3 &ndash; Develop an explainable predictive model that identifies
+                students at risk of declining wellbeing early enough for effective intervention</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Engineer features from Components 1 and 2 plus LMS engagement and grades</p>
+              <p class="feat-sec">Train and evaluate gradient-boosting models (XGBoost, LightGBM); handle class imbalance
+                (SMOTE)</p>
+              <p class="feat-sec">Produce a low&nbsp;/&nbsp;moderate&nbsp;/&nbsp;high risk score with SHAP
+                explanations</p>
+              <p class="feat-sec">Provide a consent-based alert to the counselling team for students at elevated risk</p>
+            </div>
+            <div class="col-md-4 tab-img"><img src="images/objectives/obj-risk-prediction.jpg" class="img-responsive"
+                alt=""></div>
+
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-5">
+            <div class="col-md-6 tab">
+              <h5 style="margin-top: 80px;">Objective 4 &ndash; Design and evaluate a personalised recommendation and
+                conversational-support module that routes students to appropriate resources</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Build a rule- and content-based recommender over a resource catalogue</p>
+              <p class="feat-sec">Add an intent-based conversational agent (Rasa&nbsp;/&nbsp;LLM) for first-line
+                support</p>
+              <p class="feat-sec">Match students to self-help content, guided exercises, peer support or a counsellor
+                referral</p>
+              <p class="feat-sec">Escalate high-risk cases with an alert to the wellbeing team</p>
+            </div>
+            <div class="col-md-4 tab-img"><img src="images/objectives/obj-recommendation.jpg" class="img-responsive"
+                alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-6">
+            <div class="col-md-6 tab">
+              <h5 style="margin-top: 80px;">Objective 5 &ndash; Evaluate the integrated system for accuracy, usability
+                and ethical&nbsp;/&nbsp;privacy compliance</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Measure model accuracy and the quality of end-to-end risk detection</p>
+              <p class="feat-sec">Run usability testing with students and counsellors on both dashboards</p>
+              <p class="feat-sec">Review data handling against ethical approval and privacy requirements</p>
+              <p class="feat-sec">Refine the system based on evaluation findings</p>
+            </div>
+            <div class="col-md-4 tab-img"><img src="images/objectives/obj-evaluation.jpg" class="img-responsive"
+                alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Auto-advance the Research Objectives tabs one by one, like a slideshow.
+    // Pauses while the user is interacting (hover) and resumes after, and
+    // clicking a tab manually just resets the timer rather than fighting it.
+    // Deferred to window.onload because jQuery/Bootstrap's <script> tags
+    // sit at the end of <body>, after this block - $ isn't defined yet
+    // if run immediately.
+    window.addEventListener('load', function () {
+      var tabLinks = document.querySelectorAll('#Objectives .nav-tabs a[data-toggle="tab"]');
+      if (!tabLinks.length || typeof $ === 'undefined') return;
+      var current = 0;
+      var timer = null;
+      var DELAY = 5000;
+
+      function activate(i) {
+        current = (i + tabLinks.length) % tabLinks.length;
+        $(tabLinks[current]).tab('show');
+      }
+      function start() {
+        stop();
+        timer = setInterval(function () { activate(current + 1); }, DELAY);
+      }
+      function stop() { clearInterval(timer); }
+
+      tabLinks.forEach(function (a, i) {
+        a.addEventListener('click', function () { current = i; start(); });
+      });
+      var wrapper = document.querySelector('#Objectives .tab-content');
+      wrapper.addEventListener('mouseenter', stop);
+      wrapper.addEventListener('mouseleave', start);
+
+      start();
+    });
+  </script>
+
+
 
   <!--Jquery-->
   <script type="text/javascript" src="js/jquery.min.js?v=1"></script>
